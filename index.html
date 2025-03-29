@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeon Flexx CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+</body>
+<!-- Start of Form Controls -->
+<h1>Form Controls (WIP)</h1>
+
+<div class="form-control-wrap mt-3">
+    <label for="email-example" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email-example" placeholder="name@example.com">
+</div>
+
+<div class="form-control-wrap mt-3">
+    <label for="disabled-example" class="form-label">Disabled</label>
+    <input type="text" class="form-control" id="disabled-example" disabled placeholder="This is disabled">
+</div>
+
+<div class="form-control-wrap mt-3">
+    <label for="textarea-example" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="textarea-example" rows="3"></textarea>
+</div>
+
+<div class="form-select-wrap mt-3">
+    <label for="select-example" class="form-label">Example select</label>
+    <select class="form-select" id="select-example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+</div>
+
+<div class="form-select-wrap mt-3">
+    <label for="multiselect-example" class="form-label">Example multiselect</label>
+    <select multiple class="form-select" id="multiselect-example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+</div>
+<!-- End of Form Controls -->
+
+<!-- Start of Typography -->
+<h1 class="mt-xl">Typography</h1>
+
+<h1>Primary heading</h1>
+<h2>Secondary heading</h2>
+<h3>Tertiary heading</h3>
+<!-- End of Typography -->
+
+<!-- Start of Accordion -->
+<h1 class="mt-xl">Accordion</h1>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <label class="accordion-header" tabindex="0">
+            <input class="accordion-trigger" type="checkbox" hidden>
+            Accordion Item #1
+        </label>
+        <div class="accordion-body">
+            <div class="p-2"><strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                collapse plugin adds the appropriate classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <label class="accordion-header" tabindex="0">
+            <input class="accordion-trigger" type="checkbox" hidden>
+            Accordion Item #2
+        </label>
+        <div class="accordion-body">
+            <div class="p-2"><strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                collapse plugin adds the appropriate classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+        </div>
+    </div>
+</div>
+<!-- End of Accordion -->
+
+<!-- Start of Alert -->
+<h1 class="mt-xl">Alert</h1>
+
+<div class="alert alert-primary self-type">A self typing primary alert—check it out!</div>
+<div class="alert alert-secondary self-type">A self typing secondary alert—check it out!
+</div>
+<!-- End of Alert -->
+
+<!-- Start of Badge -->
+<h1 class="mt-xl">Badge</h1>
+
+<h1>Primary heading <span class="badge badge-primary">New</span></h1>
+<h2>Secondary heading <span class="badge badge-primary">New</span></h2>
+<h3>Tertiary heading <span class="badge badge-primary">New</span></h3>
+
+<div class="mb-3">Normal text <span class="badge badge-secondary">New</span></div>
+
+<button class="btn btn-primary">
+    Notifications <span class="badge badge-secondary">4</span>
+</button>
+<!-- End og Badge -->
+
+<!-- Start of Button -->
+<h1 class="mt-xl">Button</h1>
+
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-primary" disabled>Disabled primary</button>
+<button class="btn btn-secondary" disabled>Disabled secondary</button>
+<!-- End of Button -->
+
+<!-- Start of Breadcrumb -->
+<h1 class="mt-xl">Breadcrumb</h1>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active">Home</li>
+</ol>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active">Library</li>
+</ol>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active">Data</li>
+</ol>
+<!-- End of Breadcrumb -->
+
+<!-- Start of Card -->
+<h1 class="mt-xl">Card</h1>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h3 class="card-title self-type">Card Title</h3>
+        <p class="card-text self-type">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+<div class="card mt-3">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">Special title treatment</h3>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+<div class="card text-center mt-3">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">Special title treatment</h3>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer">
+        2 days ago
+    </div>
+</div>
+
+<div class="d-flex gap-2 mt-3">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Special title treatment</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Special title treatment</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<!-- End of Card -->
+
+<!-- Start of Carousel -->
+<h1 class="mt-xl">Carousel</h1>
+
+<div class="carousel">
+    <div class="carousel-indicators">
+        <label class="carousel-indicator" tabindex="0">
+            <input class="carousel-trigger" type="radio" name="carousel" hidden checked>
+        </label>
+
+        <label class="carousel-indicator" tabindex="0">
+            <input class="carousel-trigger" type="radio" name="carousel" hidden>
+        </label>
+
+        <label class="carousel-indicator" tabindex="0">
+            <input class="carousel-trigger" type="radio" name="carousel" hidden>
+        </label>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <div class="text-center px-3" style="padding-top: 100px; height: 350px; background: #111;">
+                <h1>Slide 1</h1>
+                <p class="self-type">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint repellat
+                    deleniti ullam nisi quidem minus, consequuntur minima tenetur. Amet iste inventore sapiente nemo
+                    dicta placeat a deleniti saepe tempora?</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="text-center px-3" style="padding-top: 100px; height: 350px; background: #222;">
+                <h1>Slide 2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam illum ratione modi explicabo
+                    suscipit at ab esse quibusdam incidunt delectus odit, expedita pariatur fugit reprehenderit
+                    veritatis dignissimos optio. Dignissimos.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="text-center px-3" style="padding-top: 100px; height: 350px; background: #333;">
+                <h1>Slide 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio ut, laborum dolorem consequatur
+                    neque sunt doloremque excepturi sint dolore, fuga sit voluptate blanditiis tenetur perferendis quos
+                    mollitia est nihil.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Carousel -->
+
+<!-- Start of Collapse -->
+<h1 class="mt-xl">Collapse</h1>
+
+<label class="btn btn-primary" for="collapse" tabindex="0">Open/close collapse</label>
+
+<div class="collapse">
+    <input class="collapse-trigger" id="collapse" type="checkbox" hidden>
+
+    <div class="collapse-body">
+        <div class="card card-body">Some placeholder content for the collapse component. This panel is hidden by default
+            but revealed when the user activates the relevant trigger.</div>
+    </div>
+</div>
+<!-- End of Collapse -->
+
+<!-- Start of Dropdown -->
+<h1 class="mt-xl">Dropdown</h1>
+
+<div class="dropdown-wrap">
+    <div class="dropdown">
+        <label class="btn btn-secondary dropdown-toggle" tabindex="0">
+            <input class="dropdown-trigger" type="checkbox" hidden>
+            Dropdown button
+        </label>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" tabindex="-1">Action</a></li>
+            <li><a class="dropdown-item" href="#" tabindex="-1">Another action</a></li>
+            <li><a class="dropdown-item" href="#" tabindex="-1">Something else here</a></li>
+            <li><a class="dropdown-item" href="#" tabindex="-1">We have a very long dropdown item name here</a></li>
+        </ul>
+    </div>
+</div>
+<!-- End of Dropdown -->
+
+<!-- Start of List Group -->
+<h1 class="mt-xl">List Group</h1>
+
+<ul class="list-group" style="max-width: 400px">
+    <li class="list-group-item self-type">This is a bordered list, ideal as a standalone component</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+
+<ul class="list-group list-group-flush mt-3" style="max-width: 400px">
+    <li class="list-group-item self-type">This is a borderless list, ideal for cards and other components</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+
+<ol class="list-group mt-3" style="max-width: 400px">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto">
+            <div class="fw-bold">Subheading</div>
+            Cras justo odio
+        </div>
+        <span class="badge badge-primary rounded-pill">14</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto">
+            <div class="fw-bold">Subheading</div>
+            Cras justo odio
+        </div>
+        <span class="badge badge-primary rounded-pill">14</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto">
+            <div class="fw-bold">Subheading</div>
+            Cras justo odio
+        </div>
+        <span class="badge badge-primary rounded-pill">14</span>
+    </li>
+</ol>
+
+<div class="list-group mt-3" style="max-width: 400px">
+    <a href="#" class="list-group-item active">
+        <div class="d-flex w-100 justify-content-between">
+            <h3 class="mb-1">List group item heading</h3>
+            <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small>And some small print.</small>
+    </a>
+
+    <a href="#" class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+            <h3 class="mb-1">List group item heading</h3>
+            <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+    </a>
+
+    <a href="#" class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+            <h3 class="mb-1">List group item heading</h3>
+            <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+    </a>
+</div>
+<!-- End of List Group -->
+
+<!-- Start of Glitch Effect -->
+<h1 class="mt-xl">Glitch Effect</h1>
+
+<h1 class="glitch" data-text="Glitched primary heading">Glitched primary heading</h1>
+<h2 class="glitch" data-text="Glitched secondary heading">Glitched secondary heading</h2>
+<h3 class="glitch" data-text="Glitched tertiary heading">Glitched tertiary heading</h3>
+<!-- End of Glitch Effect -->
+
+<!-- Start of Modal -->
+<h1 class="mt-xl">Modal</h1>
+
+<label class="btn btn-primary" for="modal-trigger" tabindex="0">Launch modal</label>
+
+<div class="modal">
+    <input class="modal-trigger" type="checkbox" id="modal-trigger" hidden>
+
+    <div class="modal-dialog" style="max-width: 500px">
+        <h2 class="modal-title">Modal Title</h2>
+
+        <div class="modal-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet blanditiis minima rem amet exercitationem
+            nisi illo qui iste excepturi similique ducimus, aperiam, beatae aspernatur odit nihil. Dicta eum voluptate
+            possimus?
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-primary" tabindex="-1">Ok</button>
+            <label class="btn btn-secondary" for="modal-trigger">Exit</label>
+        </div>
+    </div>
+</div>
+<!-- End of Modal -->
+
+<!-- Start of Nav -->
+<h1 class="mt-xl">Nav</h1>
+
+<ul class="nav">
+    <li class="nav-item active">
+        <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item disabled">
+        <a class="nav-link" href="#" tabindex="-1">Disabled</a>
+    </li>
+</ul>
+<!-- End of Nav -->
+
+<!-- Start of Progress -->
+<h1 class="mt-xl">Progress</h1>
+
+<div class="progress">
+    <div class="progress-bar"></div>
+</div>
+
+<div class="progress mt-3">
+    <div class="progress-bar" style="width: 25%"></div>
+</div>
+
+<div class="progress mt-3">
+    <div class="progress-bar" style="width: 50%"></div>
+</div>
+
+<div class="progress mt-3">
+    <div class="progress-bar" style="width: 75%"></div>
+</div>
+
+<div class="progress mt-3">
+    <div class="progress-bar" style="width: 100%"></div>
+</div>
+<!-- End of Progress -->
+
+<!-- Start of Spinner -->
+<h1 class="mt-xl">Spinner</h1>
+
+<div class="spinner"></div>
+<div class="spinner" style="width: 50px"></div>
+<div class="spinner" style="width: 80px"></div>
+
+<button class="btn btn-primary">
+    <div class="spinner spinner-text spinner-alt"></div>
+    Loading...
+</button>
+
+<button class="btn btn-secondary">
+    <div class="spinner spinner-text"></div>
+    Loading...
+</button>
+<!-- End of Spinner -->
+
+<!-- Start of Table -->
+<h1 class="mt-xl">Table</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Fredo</td>
+            <td>Corleone</td>
+            <td>@FreddyCorly</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Fredo</td>
+            <td>Corleone</td>
+            <td>@FreddyCorly</td>
+        </tr>
+    </tbody>
+</table>
+<!-- End of Table -->
+
+</html>
