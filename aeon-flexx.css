@@ -947,17 +947,12 @@ h3 { font-size: var(--tertiary-heading) }
 }
 
 .nav-item.active {
-  padding: 10px;
   border: 2px solid rgba(var(--primary-color), 1);
   border-bottom: none;
   background-color: rgba(var(--bg-color), 1);
-  height: 0;
 }
 
 .nav-item.active .nav-link {
-  padding: 4px 10px;
-  position: relative;
-  top: -25px;
   background-color: rgba(var(--bg-color), 1);
 }
 
