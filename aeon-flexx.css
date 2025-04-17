@@ -1264,6 +1264,9 @@ small {
 .nav-item {
   margin-inline: var(--tertiary-space);
   margin-bottom: var(--tertiary-space);
+  border: 2px solid rgba(var(--primary-color), 1);
+  box-shadow: 0 0 15px rgba(var(--primary-color), 0.5);
+  transition: all 400ms ease;
 }
 
 .nav-link {
@@ -1271,10 +1274,10 @@ small {
   text-decoration: none;
 }
 
+.nav-item:hover,
 .nav-item.active {
   color: rgba(var(--bg-color), 1);
   background-color: rgba(var(--primary-color), 1);
-  box-shadow: 0 0 15px rgba(var(--primary-color), 0.5);
 }
 
 .nav-item.disabled {
