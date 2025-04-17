@@ -1257,6 +1257,7 @@ small {
 .nav {
   display: flex;
   align-items: end;
+  flex-wrap: wrap;
   border-bottom: 2px solid rgba(var(--primary-color), 1);
 }
 
