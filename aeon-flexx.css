@@ -938,7 +938,6 @@ small {
 
 /* Start of Card */
 .card {
-  background-color: rgba(var(--bg-color), 1);
   border: 2px solid rgba(var(--primary-color), 1);
   box-shadow: 0 0 15px rgba(var(--primary-color), 0.5);
 }
@@ -1258,11 +1257,11 @@ small {
   display: flex;
   align-items: end;
   flex-wrap: wrap;
+  gap: 0 var(--secondary-space);
   border-bottom: 2px solid rgba(var(--primary-color), 1);
 }
 
 .nav-item {
-  margin-inline: var(--tertiary-space);
   margin-bottom: var(--tertiary-space);
   border: 2px solid rgba(var(--primary-color), 1);
   box-shadow: 0 0 15px rgba(var(--primary-color), 0.5);
@@ -1270,7 +1269,7 @@ small {
 }
 
 .nav-link {
-  padding: 10px 20px;
+  padding: var(--tertiary-space) var(--secondary-space);
   text-decoration: none;
 }
 
@@ -1278,6 +1277,7 @@ small {
 .nav-item.active {
   color: rgba(var(--bg-color), 1);
   background-color: rgba(var(--primary-color), 1);
+  font-weight: 700;
 }
 
 .nav-item.disabled {
