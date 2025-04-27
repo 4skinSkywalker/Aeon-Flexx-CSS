@@ -9,21 +9,21 @@ function getNextSpecialChar() {
 function selfType(element) {
   element.style.visibility = "visible";
   const speed = element.getAttribute("data-speed") || 25;
-  const src = element.innerText;
+  const src = element.innerHTML;
   let srcIdx = 0;
   let dest = "";
-  element.innerText = "⠀";
+  element.innerHTML = "⠀";
   
   const typer = () => {
     if (src.length + 1 === dest.length) {
-      element.innerText = dest.slice(0, -1);
+      element.innerHTML = dest.slice(0, -1);
       return;
     }
     
     dest = (srcIdx === 0) ? dest : dest.slice(0, -1);
     dest += src[srcIdx] + getNextSpecialChar();
     srcIdx++;
-    element.innerText = dest;
+    element.innerHTML = dest;
     setTimeout(typer, speed);
   };
   
