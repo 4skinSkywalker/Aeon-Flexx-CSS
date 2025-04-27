@@ -7,6 +7,7 @@ function getNextSpecialChar() {
 }
 
 function selfType(element) {
+  element.style.visibility = "visible";
   const speed = element.getAttribute("data-speed") || 25;
   const src = element.innerText;
   let srcIdx = 0;

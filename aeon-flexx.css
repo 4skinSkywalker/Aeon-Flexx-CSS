@@ -125,6 +125,10 @@ h3 { font-size: var(--tertiary-heading) }
 .text-center { text-align: center !important }
 .text-end { text-align: right !important }
 
+.self-type {
+  visibility: hidden;
+}
+
 .glitch {
   position: relative;
   animation: Glitch 2.5s infinite;
