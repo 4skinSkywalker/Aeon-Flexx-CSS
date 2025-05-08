@@ -177,64 +177,78 @@ h3 { font-size: var(--tertiary-heading) }
 .p-3 { padding: var(--primary-space) !important }
 .p-2 { padding: var(--secondary-space) !important }
 .p-1 { padding: var(--tertiary-space) !important }
+.p-0 { padding: 0 !important }
 
 .px-3 { padding-inline: var(--primary-space) !important }
 .px-2 { padding-inline: var(--secondary-space) !important }
 .px-1 { padding-inline: var(--tertiary-space) !important }
+.px-0 { padding-inline: 0 !important }
 
 .py-3 { padding-block: var(--primary-space) !important }
 .py-2 { padding-block: var(--secondary-space) !important }
 .py-1 { padding-block: var(--tertiary-space) !important }
+.py-0 { padding-block: 0 !important }
 
 .pt-3 { padding-top: var(--primary-space) !important }
 .pt-2 { padding-top: var(--secondary-space) !important }
 .pt-1 { padding-top: var(--tertiary-space) !important }
+.pt-0 { padding-top: 0 !important }
 
 .pe-3 { padding-right: var(--primary-space) !important }
 .pe-2 { padding-right: var(--secondary-space) !important }
 .pe-1 { padding-right: var(--tertiary-space) !important }
+.pe-0 { padding-right: 0 !important }
 
 .pb-3 { padding-bottom: var(--primary-space) !important }
 .pb-2 { padding-bottom: var(--secondary-space) !important }
 .pb-1 { padding-bottom: var(--tertiary-space) !important }
+.pb-0 { padding-bottom: 0 !important }
 
 .ps-3 { padding-left: var(--primary-space) !important }
 .ps-2 { padding-left: var(--secondary-space) !important }
 .ps-1 { padding-left: var(--tertiary-space) !important }
+.ps-0 { padding-left: 0 !important }
 
 .m-3 { margin: var(--primary-space) !important }
 .m-2 { margin: var(--secondary-space) !important }
 .m-1 { margin: var(--tertiary-space) !important }
+.m-0 { margin: 0 !important }
 
 .mx-xl { margin-inline: var(--extra-space) !important }
 .mx-3 { margin-inline: var(--primary-space) !important }
 .mx-2 { margin-inline: var(--secondary-space) !important }
 .mx-1 { margin-inline: var(--tertiary-space) !important }
+.mx-0 { margin-inline: 0 !important }
 
 .my-xl { margin-block: var(--extra-space) !important }
 .my-3 { margin-block: var(--primary-space) !important }
 .my-2 { margin-block: var(--secondary-space) !important }
 .my-1 { margin-block: var(--tertiary-space) !important }
+.my-0 { margin-block: 0 !important }
 
 .mt-xl { margin-top: var(--extra-space) !important }
 .mt-3 { margin-top: var(--primary-space) !important }
 .mt-2 { margin-top: var(--secondary-space) !important }
 .mt-1 { margin-top: var(--tertiary-space) !important }
+.mt-0 { margin-top: 0 !important }
 
 .me-xl { margin-right: var(--extra-space) !important }
 .me-3 { margin-right: var(--primary-space) !important }
 .me-2 { margin-right: var(--secondary-space) !important }
 .me-1 { margin-right: var(--tertiary-space) !important }
+.me-0 { margin-right: 0 !important }
 
 .mb-xl { margin-bottom: var(--extra-space) !important }
 .mb-3 { margin-bottom: var(--primary-space) !important }
 .mb-2 { margin-bottom: var(--secondary-space) !important }
 .mb-1 { margin-bottom: var(--tertiary-space) !important }
+.mb-0 { margin-bottom: 0 !important }
 
 .ms-xl { margin-left: var(--extra-space) !important }
 .ms-3 { margin-left: var(--primary-space) !important }
 .ms-2 { margin-left: var(--secondary-space) !important }
 .ms-1 { margin-left: var(--tertiary-space) !important }
+.ms-0 { margin-left: 0 !important }
 
 .mx-auto { margin-inline: auto !important }
 .my-auto { margin-block: auto !important }
