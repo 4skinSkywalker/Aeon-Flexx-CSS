@@ -31,16 +31,41 @@ function selfType(element) {
 }
 
 function initSelfTypingElements() {
-  const els = document.querySelectorAll(".self-type");
-  const observer = new IntersectionObserver(entries => {
+  let outerExecCount = 0;
+  let innerExecCount = 0;
+  const documentObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        selfType(entry.target);
-        observer.unobserve(entry.target);
+        console.debug("Outer exec count:", ++outerExecCount);
+
+        const selfTypingObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target._alreadySelfTyped) {
+              console.debug("Inner exec count:", ++innerExecCount);
+              
+              entry.target._alreadySelfTyped = true;
+              selfType(entry.target);
+              selfTypingObserver.unobserve(entry.target);
+            }
+          });
+        });
+
+        entry.target.querySelectorAll(".self-type")
+          .forEach(selfTypingEl => 
+            selfTypingObserver.observe(selfTypingEl)
+          );
       }
     });
   });
-  els.forEach(el => observer.observe(el));
+
+  documentObserver.observe(
+    document.documentElement || document.body,
+    { 
+      attributes: false, 
+      childList: true, 
+      characterData: false 
+    }
+  );
 }
 
 function makeElementsClickableWithSpace() {
