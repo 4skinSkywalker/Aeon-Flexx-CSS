@@ -30,42 +30,35 @@ function selfType(element) {
   setTimeout(typer, 400);
 }
 
-function initSelfTypingElements() {
-  let outerExecCount = 0;
-  let innerExecCount = 0;
-  const documentObserver = new IntersectionObserver(entries => {
+function registerSelfTypeObserver() {
+  const selfTypeObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.debug("Outer exec count:", ++outerExecCount);
-
-        const selfTypingObserver = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target._alreadySelfTyped) {
-              console.debug("Inner exec count:", ++innerExecCount);
-              
-              entry.target._alreadySelfTyped = true;
-              selfType(entry.target);
-              selfTypingObserver.unobserve(entry.target);
-            }
-          });
-        });
-
-        entry.target.querySelectorAll(".self-type")
-          .forEach(selfTypingEl => 
-            selfTypingObserver.observe(selfTypingEl)
-          );
+        selfType(entry.target);
+        selfTypeObserver.unobserve(entry.target);
       }
     });
   });
 
-  documentObserver.observe(
-    document.documentElement || document.body,
-    { 
-      attributes: false, 
-      childList: true, 
-      characterData: false 
+  const registerSelfTypeElements = () =>
+    [...document.querySelectorAll(".self-type")]
+      .filter(element => !element._selfTypeRegistered)
+      .forEach(element => {
+        selfTypeObserver.observe(element);
+        element._selfTypeRegistered = true;
+      });
+  registerSelfTypeElements();
+
+  const documentObserver = new MutationObserver(mutations => {
+    for (const mutation of mutations) {
+      if (mutation.target._selfTypeRegistered) {
+        continue;
+      }
+      registerSelfTypeElements();
     }
-  );
+  });
+
+  documentObserver.observe(document.body, { subtree: true, childList: true });
 }
 
 function makeElementsClickableWithSpace() {
@@ -83,6 +76,6 @@ function makeElementsClickableWithSpace() {
 }
 
 (function () {
-  initSelfTypingElements();
+  registerSelfTypeObserver();
   makeElementsClickableWithSpace();
 })();
