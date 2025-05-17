@@ -75,8 +75,8 @@ label {
 }
 
 *:focus {
-    outline: none;
-    box-shadow: inset 0 0 0 2px rgba(var(--contrast-color), 1);
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(var(--contrast-color), 1);
 }
 
 body {
@@ -90,7 +90,7 @@ body {
 }
 
 body:has(.modal > .modal-trigger:checked) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body::before {
@@ -152,6 +152,13 @@ h3 { font-size: var(--tertiary-heading) }
 /* End of Typography */
 
 /* Start of Utils */
+.d-grid { display: grid !important }
+.justify-items-start { justify-items: start !important }
+.justify-items-end { justify-items: end !important }
+.justify-items-center { justify-items: center !important }
+.align-content-start { align-content: start !important }
+.align-content-end { align-content: end !important }
+.align-content-center { align-content: center !important }
 .d-flex { display: flex !important }
 .d-inline-flex { display: inline-flex !important }
 .flex-fill { flex: 1 1 auto !important }
@@ -162,12 +169,18 @@ h3 { font-size: var(--tertiary-heading) }
 .justify-content-start { justify-content: start !important }
 .justify-content-end { justify-content: end !important }
 .justify-content-center { justify-content: center !important }
+.justify-self-start { justify-self: start !important }
+.justify-self-end { justify-self: end !important }
+.justify-self-center { justify-self: center !important }
 .justify-content-between { justify-content: space-between !important }
 .justify-content-around { justify-content: space-around !important }
 .justify-content-evenly { justify-content: space-evenly !important }
 .align-items-start { align-items: start !important }
 .align-items-end { align-items: end !important }
 .align-items-center { align-items: center !important }
+.align-self-start { align-self: start !important }
+.align-self-end { align-self: end !important }
+.align-self-center { align-self: center !important }
 .align-items-baseline { align-items: baseline !important }
 .align-items-stretch { align-items: stretch !important }
 .gap-3 { gap: var(--primary-space) !important }
@@ -442,6 +455,21 @@ h3 { font-size: var(--tertiary-heading) }
   }
 }
 /* End of Animations */
+
+.cyberground {
+    background: 
+      linear-gradient(to bottom right, #1d1d1d, transparent),
+      repeating-radial-gradient(rgba(var(--primary-color), 0.25), rgba(var(--primary-color), 0.25) 1px, transparent 2px, transparent 50px),
+      repeating-linear-gradient(to right, transparent, transparent 24px, rgba(var(--primary-color), 0.25) 25px, transparent 26px, transparent 100px),
+      repeating-linear-gradient(to bottom, transparent, transparent 24px, rgba(var(--primary-color), 0.25) 25px, transparent 26px, transparent 100px),
+      linear-gradient(rgba(var(--primary-color), 0.25), rgba(var(--primary-color), 0.25)), #1e1e1e;
+    background-size:
+      auto auto,
+      50px 50px,
+      100px 100px,
+      100px 100px,
+      auto auto;
+}
 
 /* Start of Accordion */
 .accordion {
