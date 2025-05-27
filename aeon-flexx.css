@@ -596,7 +596,7 @@ h3 { font-size: var(--tertiary-heading) }
   padding:  var(--tertiary-space) var(--secondary-space);
   background-color: transparent;
   color: rgba(var(--primary-color), 1);
-  border: none;
+  border: 2px solid transparent;
   user-select: none;
 }
 
