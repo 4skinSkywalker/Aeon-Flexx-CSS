@@ -991,11 +991,19 @@ h3 { font-size: var(--tertiary-heading) }
   border: 2px solid rgba(var(--primary-color), 1);
   box-shadow: 0 0 15px rgba(var(--primary-color), 0.5);
   transition: all 400ms ease;
+  cursor: pointer;
 }
 
 .nav-link {
   padding: var(--tertiary-space) var(--secondary-space);
   text-decoration: none;
+}
+
+button.nav-link {
+  /** Remove the default button styling */
+  background: #0000;
+  border: none;
+  color: inherit;
 }
 
 .nav-item:hover,
@@ -1008,6 +1016,7 @@ h3 { font-size: var(--tertiary-heading) }
 .nav-item.disabled {
   opacity: 0.66;
   pointer-events: none;
+  cursor: not-allowed;
 }
 /* End of Nav */
 
