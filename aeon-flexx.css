@@ -1004,6 +1004,7 @@ button.nav-link {
   background: #0000;
   border: none;
   color: inherit;
+  cursor: inherit;
 }
 
 .nav-item:hover,
